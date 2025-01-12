@@ -1,4 +1,4 @@
-#Core Java Concepts
+Core Java Concepts
 
 Overview
 
@@ -68,6 +68,8 @@ Conditional: if, else, switch
 
 3. Object-Oriented Programming (OOP)
 
+
+
 Key Principles
 
 Encapsulation: Wrapping data (variables) and code (methods) together.
@@ -101,6 +103,8 @@ public class Main {
 }
 
 4. Exception Handling
+
+
 
 Definition: Mechanism to handle runtime errors, ensuring normal flow of application.
 
@@ -144,6 +148,8 @@ public class Main {
 }
 
 6. Collections Framework
+
+
 
 Definition: A set of classes and interfaces for working with groups of objects.
 
@@ -226,6 +232,33 @@ Write modular and reusable code.
 Handle exceptions effectively.
 
 Use logging frameworks for better debugging.
+
+Code Format Example with Add Link Icon
+
+Below is an example code snippet demonstrating how to use FontAwesome icons for adding a link icon in your Java GUI applications.
+
+import javax.swing.*;
+
+public class AddLinkIconExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Add Link Icon Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 200);
+
+        // Create a button with a link icon
+        JButton button = new JButton("Click Here");
+        button.setIcon(new ImageIcon("path/to/link-icon.png")); // Replace with actual path to your icon
+
+        // Add action listener
+        button.addActionListener(e -> {
+            System.out.println("Link clicked!");
+        });
+
+        // Add button to the frame
+        frame.getContentPane().add(button);
+        frame.setVisible(true);
+    }
+}
 
 Conclusion
 
